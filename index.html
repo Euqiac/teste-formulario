@@ -13,29 +13,17 @@
       <h1>Teste - Criação de Formulário</h1>
       <h2>Utilização dos tipos de input</h2>
 
-      <div class="formulario">
-        <form class="info">
+      <form class="formulario">
+        <div class="info">
           <p>Nome</p>
-          <input
-            class="input-preench"
-            type="text"
-            name="nome"
-            id="nome"
-            required
-          />
+          <input type="text" name="nome" id="nome" required />
 
           <p>Email</p>
-          <input
-            class="input-preench"
-            type="emai"
-            name="email"
-            id="email"
-            required
-          />
+          <input type="emai" name="email" id="email" required />
 
-          <p>Idade</p>
-          <input class="input-preench" type="number" name="idade" id="idade" />
-        </form>
+          <p>Idade <span>(opcional)</span></p>
+          <input type="number" name="idade" id="idade" />
+        </div>
 
         <p>Qual opção melhor descreve sua ocupação atual?</p>
         <select name="ocupacao" id="ocupacao">
@@ -46,7 +34,7 @@
         </select>
 
         <p>Qual é a sua linguagem favorita?</p>
-        <form class="fav_ling">
+        <div class="fav_ling">
           <input type="radio" name="linguagem" id="HTML" value="HTML" />
           <label for="HTML">HTML</label>
 
@@ -60,10 +48,10 @@
             value="JavaScript"
           />
           <label for="JavaScript">JavaScript</label>
-        </form>
+        </div>
 
         <p>Quais linguagens gostaria de aprender?</p>
-        <form class="nova_ling">
+        <div class="nova_ling">
           <input type="checkbox" name="python" id="python" />
           <label for="python">Python</label>
           <input type="checkbox" name="java" id="java" />
@@ -74,17 +62,17 @@
           <label for="php">PHP</label>
           <input type="checkbox" name="R" id="R" />
           <label for="R">R</label>
-        </form>
+        </div>
 
-        <p>Algum comentário ou sugestão</p>
-        <input
-          class="input-preench"
-          type="text"
+        <p>Algum comentário ou sugestão? <span>(opcional)</span></p>
+        <textarea
           name="sugestao"
           id="sugestao"
+          rows="7"
           placeholder="Deixe seu comentário ou sua sugestão"
-        />
-      </div>
+        ></textarea>
+        <button>Enviar</button>
+      </form>
     </div>
   </body>
 </html>
