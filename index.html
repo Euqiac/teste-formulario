@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="formulario-container">
+      <h1>Teste - Criação de Formulário</h1>
+      <h2>Utilização dos tipos de input</h2>
+
+      <div class="formulario">
+        <form class="info">
+          <p>Nome</p>
+          <input
+            class="input-preench"
+            type="text"
+            name="nome"
+            id="nome"
+            required
+          />
+
+          <p>Email</p>
+          <input
+            class="input-preench"
+            type="emai"
+            name="email"
+            id="email"
+            required
+          />
+
+          <p>Idade</p>
+          <input class="input-preench" type="number" name="idade" id="idade" />
+        </form>
+
+        <p>Qual opção melhor descreve sua ocupação atual?</p>
+        <select name="ocupacao" id="ocupacao">
+          <option value="estuda">Estudante</option>
+          <option value="estudatrabalha">Estudante e Empregado</option>
+          <option value="empregado">Empregado</option>
+          <option value="outro">Outro</option>
+        </select>
+
+        <p>Qual é a sua linguagem favorita?</p>
+        <form class="fav_ling">
+          <input type="radio" name="linguagem" id="HTML" value="HTML" />
+          <label for="HTML">HTML</label>
+
+          <input type="radio" name="linguagem" id="CSS" value="CSS" />
+          <label for="CSS">CSS</label>
+
+          <input
+            type="radio"
+            name="linguagem"
+            id="JavaScript"
+            value="JavaScript"
+          />
+          <label for="JavaScript">JavaScript</label>
+        </form>
+
+        <p>Quais linguagens gostaria de aprender?</p>
+        <form class="nova_ling">
+          <input type="checkbox" name="python" id="python" />
+          <label for="python">Python</label>
+          <input type="checkbox" name="java" id="java" />
+          <label for="java">Java</label>
+          <input type="checkbox" name="C" id="C" />
+          <label for="C">C</label>
+          <input type="checkbox" name="php" id="php" />
+          <label for="php">PHP</label>
+          <input type="checkbox" name="R" id="R" />
+          <label for="R">R</label>
+        </form>
+
+        <p>Algum comentário ou sugestão</p>
+        <input
+          class="input-preench"
+          type="text"
+          name="sugestao"
+          id="sugestao"
+          placeholder="Deixe seu comentário ou sua sugestão"
+        />
+      </div>
+    </div>
+  </body>
+</html>

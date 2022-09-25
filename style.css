@@ -1,0 +1,78 @@
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+h1,
+h2,
+a,
+p,
+label {
+  margin: 0;
+}
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 1000px;
+}
+
+body {
+  background: url("./img/background.jpg") no-repeat;
+  background-size: 100%;
+  max-width: 100%;
+  display: grid;
+  align-items: center;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.formulario-container {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formulario {
+  margin-top: 20px;
+  max-width: max-content;
+  background-color: rgba(27, 27, 50, 0.6);
+  padding: 50px;
+}
+
+.formulario p {
+  font-size: 1.2rem;
+}
+
+.formulario p:not(:first-child) {
+  margin-top: 20px;
+}
+
+.formulario label {
+  font-size: 1rem;
+}
+
+.input-preench {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.fav_ling {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 5px;
+}
+
+h1,
+h2,
+p,
+label {
+  color: var(--color-white);
+}
